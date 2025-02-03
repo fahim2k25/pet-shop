@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
     <!-- tailwind and daisyUI link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,9 +27,21 @@
     </script>
     <!-- font awesome connection -->
     <script src="https://kit.fontawesome.com/93d35d8de8.js" crossorigin="anonymous"></script>
+    <!-- Website's custom font -->
+    <style>
+        .primary-font {
+            font-family: "ADLaM Display", serif;
+            font-style: normal;
+        }
+
+        .secondary-font {
+            font-family: "Sora", serif;
+            font-style: normal;
+        }
+    </style>
 </head>
 
-<body>
+<body class="primary-font">
     <header class="bg-[#FFF9F4] border-2 border-red-600 w-full">
 
         <!-- navbar begins -->
@@ -56,7 +73,7 @@
             <!-- Navbar Middle menus -->
             <div class="navbar-center hidden md:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Find a Pet</a></li>
+                    <li><a>Find Pet</a></li>
                     <li>
                         <a>Breeds</a>
                     </li>
@@ -64,11 +81,9 @@
                 </ul>
             </div>
             <!-- Navbar Buttons -->
-            <div class="hidden md:flex">
-                <div class="ml-4"><i class="fa-regular fa-bell"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-
+            <div class="hidden md:flex gap-3">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
                 <a class="btn btn-outline btn-warning">Login</a>
                 <a class="btn btn-warning">Register</a>
             </div>
@@ -78,7 +93,6 @@
     </header>
 
     <main>
-
     </main>
     <footer>
 
