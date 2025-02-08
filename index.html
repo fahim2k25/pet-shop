@@ -346,13 +346,17 @@
 
         <!-- get pawsome news starts here -->
         <section
-            class="bg-[#FFF9F4] flex flex-col md:flex-row gap-8 md:gap-28 max-w-screen-xl container mx-auto mb-8 md:mb-16 p-4 md:p-24">
-            <div> <img class="w-80 h-96" src="./Assets/cute-pet-mid.png" alt="pet sitting">
+            class="bg-[#FFF9F4] flex flex-col items-center md:flex-row gap-8 md:gap-28 max-w-screen-xl container mx-auto mb-8 md:mb-16 px-4 py-8 md:p-24">
+            <!-- Pet image -->
+            <div> <img class="w-48 h-60 md:w-80 md:h-96" src="./Assets/cute-pet-mid.png" alt="pet sitting">
             </div>
-            <div>
-                <h2 class="text-4xl mb-5">Get Pawsome News!</h2>
-                <p class="secondary-font text-xl">Exclusive training tips, ticks, product deals and more.</p>
-
+            <!-- Form content -->
+            <div class="text-center md:text-left">
+                <h2 class="text-xl md:text-4xl mb-5">Get Pawsome News!</h2>
+                <p class="secondary-font text-base md:text-xl mb-9">Exclusive training tips, ticks, product deals and
+                    more.</p>
+                <input type="text" placeholder="Enter Email...." class="input max-w-xs secondary-font mb-9 w-full" />
+                <div><a class="btn btn-warning secondary-font w-40 font-normal text-base md:text-xl">Subscribe</a></div>
             </div>
         </section>
         <!-- footer content starts here -->
