@@ -29,6 +29,8 @@
     </script>
     <!-- font awesome connection -->
     <script src="https://kit.fontawesome.com/93d35d8de8.js" crossorigin="anonymous"></script>
+    <!-- ANimation for website -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <!-- Website's custom font -->
     <style>
         .primary-font {
@@ -143,7 +145,7 @@
     <main>
         <!--Banner section starts here -->
         <section
-            class="md:bg-[url('./Assets/cat-big.png')] max-w-screen-xl container mx-auto md:h-[768px] px-3 mb-8 md:mb-16">
+            class="md:bg-[url('./Assets/cat-big.png')] max-w-screen-xl container mx-auto md:h-[768px] px-3 mb-8 md:mb-16 relative">
             <h1 class="text-3xl md:text-5xl font-normal mb-3 md:mb-5 leading-9 md:leading-[73px]">Pamper Your Pet,<br>
                 Because They Deserve<br> the Best! <i class="fa-solid fa-cat"></i>
             </h1>
@@ -154,6 +156,10 @@
             <div class="bg-[url('./Assets/cat-big.png')] md:bg-[url('')] w-80 h-60 bg-contain bg-no-repeat">
                 <a class="btn btn-warning secondary-font w-40 text-base md:text-xl">Find a pet</a>
             </div>
+            <!-- animation -->
+            <dotlottie-player src="https://lottie.host/a3d2746d-2997-43f0-ae89-d3a4dd396d5a/0GLQCCseOd.lottie"
+                background="transparent" speed="1" loop autoplay
+                class="absolute  w-24 h-24 top-52 left-44 md:top-96 md:-left-4 md:w-56 md:h-56"></dotlottie-player>
         </section>
         <!-- Browse Categories section starts here -->
         <section class="max-w-screen-xl container mx-auto mb-8 md:mb-16 py-4 md:py-6">
